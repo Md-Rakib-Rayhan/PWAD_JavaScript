@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2 id="display"></h2>
+
+    <!-- JavaScript variables can be declared in 4 ways:
+
+        Modern JavaScript                           Older JavaScript
+        Using let                                   Using var (Not Recommended)
+        Using const                                 Automatically (Not Recommended) -->
+
+        
+        
+        
+    
+<!-- Case sensitive (X is different from x). -->
+<!-- Numbers are not allowed as the first character in names. -->
+
+    <script>
+
+//  ____________________________________What they do what not________________________________ 
+
+        var a = 10;
+        var a = 100; // Redeclared
+        var b = 10;
+        b = 200; // Reassigned
+        document.write(a, " ", b, "<br>");
+
+
+
+        let c = 10;
+        // let c = 100; not work XXXXXXXX
+        let d = 10;
+        d = 200;
+        document.write(c, " ", d, "<br>");
+
+
+        const e = 10;
+        // const e = 100; Not work XXXXXXXXXXXX
+        const f = 10;
+        // f = 200; Not work XXXXXXXXXXXXXXX
+        document.write(e, " ", f, "<br>");
+
+
+
+        // Block Scope -> const, let
+        // var Block Scope na, that's mean
+                                            // {
+                                            // var x = 2;
+                                            // }
+                                            // x can be used here
+
+
+
+
+
+
+
+// _____________________________________Naming_____________________________________________________________________
+        // let 132 = 2; XXXXXXXX
+        let $ = "Hello World ";
+        let _x = 2;
+        let _ = $+_x;
+        let hi = "ok";
+        document.write(_," ", hi);
+
+
+
+
+
+// show in Html
+        var name;
+        name = "Rakib";
+        document.getElementById("display").innerHTML = name;
+
+    </script>
+</body>
+</html>
