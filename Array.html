@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Fruit List</h3>
+
+    <script>
+        var fruits = ["Mango", "Apple", "Banana", "Alu"];  // they recommend to use const
+        console.log(fruits);
+        document.write(fruits);
+
+        const flowers = new Array("Rose", "Water lily", "Deffodil", "Sunflower"); // SAME, no need to use new Array()
+        console.log(flowers);
+
+
+        // const is a little misleading
+        const score = [20, 40, 60];
+        score[3] = 90; // can add
+        score[2] = 100; //can change
+        console.log(score);
+        console.log("");
+       
+//_________________________________________ But you can NOT reassign the array__________________________________________
+
+        // Incorrect
+        // const PI;
+        // PI = 3.14159265359;
+
+        // const cars = ["Saab", "Volvo", "BMW"];
+        // cars = ["Toyota", "Volvo", "Audi"];    // ERROR
+        
+
+
+        var points = [10]; // value assign 40
+        console.log(points);
+        document.write("<br><br>", points);
+
+//  ________________________________________Those two are Not Same___________________________________
+
+        var points = new Array(10); // 10 empty value or also call array length/size
+        console.log(points);
+        document.write("<br>", points, "<br>");
+
+// _________But this is same__________________
+        // const points = new Array(40, 100, 1, 5, 25, 10);
+        // const points = [40, 100, 1, 5, 25, 10];
+
+
+        
+
+
+
+    </script>
+</body>
+</html>

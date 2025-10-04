@@ -38,7 +38,40 @@
         {
             document.write(i, "<br>");
         }
-        
+
+
+        document.write("<br><br>");
+
+
+        // ___________________________________________ In Details____________________________________
+
+        // The for statement creates a loop with 3 optional expressions
+        // So those (let i = 10; i>=0; i--) are optional
+
+        const cars = ["BMW", "Volvo", "Saab", "Ford"];
+
+        let i = 0;
+        let text = "";
+
+        for ( ; i < cars.length ; ) {
+        text += cars[i] + "<br>";
+        i++;
+        }
+        document.write(text);
+
+
+        document.write("<br><br>");
+
+
+        for (j = 0; true ; j++) {
+            document.write(j);
+     
+            if (j == 3)
+            {
+                break;
+            }
+        }
+
 
     </script>
 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const roses = ["Rose", "White Rose", "Black Rose", "Blue Rose", "Desi Rose", "Arabaian Rose"];
+
+        document.write("<ol>");
+        for(let i = 0; i<roses.length; i++)
+        {
+            document.write("<li>" + roses[i] + "</li>");
+        }
+        document.write("</ol>");
+        
+
+        document.write("<br><br><hr><br><br>");
+
+
+        let output = "<ul>";
+        for(let i = 0; i<roses.length; i++){
+            output += "<li>" + roses[i] + "</li>";
+        }
+        output += "</ul>";
+        
+        document.write(output);
+
+    </script>
+
+    
+</body>
+</html>

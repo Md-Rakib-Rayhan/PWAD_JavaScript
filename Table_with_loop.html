@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        const roses = ["Rose", "Water lily", "Mint flower", "Sunflower", "jeasmin"];
+
+
+        let output = "<table>";
+        output += "<tr><th>SN</th><th>Flower Name</th></tr>";
+        for(let i = 0; i<roses.length; i++)
+        {
+            output += "<tr>";
+            output += "<td>" + (i+1) + "</td>";
+            output += "<td>" + roses[i] + "</td>";
+            output += "</tr>";
+        }
+        output += "</table>";
+        document.write(output);
+
+        
+
+ 
+    </script>
+
+    
+</body>
+</html>
