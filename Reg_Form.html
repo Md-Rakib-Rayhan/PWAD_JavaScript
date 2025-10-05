@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .regform{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            background-color: skyblue;
+        }
+        #display, #r_caption{
+            font-size: 25px;
+            text-align: center;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="regform">
+        <div>
+        <h3 id="r_caption">Registration Form</h3>
+        <form action="" name="reg">
+            Name: <br>
+            <input type="text" name="fullname" placeholder="Enter Your Name"><br>
+            Gender <br>
+            <input type="radio" name="gender" value="male">male
+            <input type="radio" name="gender" value="female">female <br>
+            District <br>
+            <select name="district" id="">
+                <option value="">Select One</option>
+                <option value="dhaka">Dhaka</option>
+                <option value="sirajganj">Sirajganj</option>
+                <option value="rajshahi">Rajshahi</option>
+            </select><br>
+            Address <br>
+            <textarea name="address" id="" placeholder="Enter Your Address"></textarea><br>
+            <button onclick="form_handle()" type="button">Submit</button>
+            
+
+        </form>
+        <div id="display"></div>
+        </div>
+    </div>
+
+    
+
+
+
+    <script>
+
+        function form_handle(){
+            let full_name = document.reg.fullname.value;
+            let gender = document.reg.gender.value;
+            let dis = document.reg.district.value;
+            let address = document.reg.address.value;
+
+            // alert(full_name + " " + gender + " " + dis + " " + address);
+            let p_details;
+            p_details = "Name: "+full_name+" <br>Gender: "+gender+" <br>District: "+dis+ " <br>Address: "+address;
+
+            // p_details = "Name: "+full_name+" \nGender: "+gender+" \nDistrict: "+dis+ " \nAddress: "+address;
+            // console.log(p_details);
+
+            document.getElementById("display").innerHTML=p_details;
+            document.getElementById("r_caption").innerHTML="Your Information";
+            document.reg.style.display = 'none';
+
+
+
+        }
+
+    </script>
+</body>
+</html>

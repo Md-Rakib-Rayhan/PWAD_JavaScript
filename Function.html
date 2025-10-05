@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function welcome(name){
+        //     alert(name + " you are welcome");
+        // }
+
+        function welcome(){
+            var your_name = prompt("Your Name");
+            alert(your_name + " you are welcome");
+        }
+
+        function basic_cal(num1, num2){
+            num1 = parseInt(num1); // prompt sting ferot dey tai int a convert
+            num2 = parseInt(num2);
+            var add = num1 + num2;
+            var sub = num1 - num2;
+            var mul = num1 * num2;
+            var div = num1 / num2;
+            alert("Addition " + add + " Subtraction " + sub + " Multiplication " + mul + " Division " + div);
+        }
+
+
+
+
+        function add(a, b){
+            return a+b;
+        }
+
+
+
+    </script>
+<!-- _______________________________________________Check here_________________________________ -->
+    <!-- <button onclick="welcome('Ortopus')">Click Here</button> -->
+    <button onclick="welcome()">Just Say Your Name</button>
+    <button onclick="basic_cal(prompt('first Number'), prompt('Secound Number'))">Enter 2 Number</button>
+
+
+
+
+    <br><br><br>
+    <h1>My Calculator</h1>
+    <button onclick="">Addition</button>
+    <button onclick="">Subtraction</button>
+
+</body>
+</html>

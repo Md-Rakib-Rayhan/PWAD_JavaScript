@@ -1,0 +1,10 @@
+Parentheses ()
+Curly braces {}
+Square brackets []
+Angle brackets <>
+
+Primitive and Compound___________________________________________________
+
+All data type divided into this two category:----
+Primative -> int, boolean, string, null, undifine
+Compound -> array, object
