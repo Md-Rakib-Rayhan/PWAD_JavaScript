@@ -41,6 +41,11 @@
             </select><br>
             Address <br>
             <textarea name="address" id="" placeholder="Enter Your Address"></textarea><br>
+            Skills <br>
+            <input type="checkbox" name="skills[]" class="skills" value="html"> Html
+            <input type="checkbox" name="skills[]" class="skills" value="css"> CSS
+            <input type="checkbox" name="skills[]" class="skills" value="javascript"> Javascript
+            <input type="checkbox" name="skills[]" class="skills" value="php"> PHP <br>
             <button onclick="form_handle()" type="button">Submit</button>
             
 
@@ -60,10 +65,21 @@
             let gender = document.reg.gender.value;
             let dis = document.reg.district.value;
             let address = document.reg.address.value;
+            let skills = "";
+
+            let checkboxes = document.getElementsByClassName("skills");
+            for(let i = 0; i < checkboxes.length; i++){
+                if(checkboxes[i].checked){
+                    skills += checkboxes[i].value + ",";
+                }
+            }
+
+
 
             // alert(full_name + " " + gender + " " + dis + " " + address);
             let p_details;
             p_details = "Name: "+full_name+" <br>Gender: "+gender+" <br>District: "+dis+ " <br>Address: "+address;
+            p_details += "<br> Skills: "+skills;
 
             // p_details = "Name: "+full_name+" \nGender: "+gender+" \nDistrict: "+dis+ " \nAddress: "+address;
             // console.log(p_details);

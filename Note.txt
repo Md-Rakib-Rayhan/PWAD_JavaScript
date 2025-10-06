@@ -3,6 +3,9 @@ Curly braces {}
 Square brackets []
 Angle brackets <>
 
+return statement stops the execution of a function and returns a value.
+return value; return 0; return a+b;
+
 Primitive and Compound___________________________________________________
 
 All data type divided into this two category:----

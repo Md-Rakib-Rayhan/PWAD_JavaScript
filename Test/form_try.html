@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>Basic Form</h3>
+    <form action="" name="myform" onsubmit="return form_validation()"> <!-- Return na likhle function er return kaj korbe na -->
+        Name: <br>
+        <input type="text" name="name" placeholder="Enter Your Name"> <br>
+        Email: <br>
+        <input type="email" name="email" placeholder="Enter Your Email"> <br>
+        Phone Number: <br>
+        <input type="number" name="number" placeholder="Enter Your Phone Number"> <br>
+        Address: <br>
+        <textarea name="address" id=""></textarea> <br>
+         <input type="submit" name="submit" value="submit">
+    </form>
+    
+    <script>
+
+
+        function form_validation()
+        {
+            let name = document.myform.name.value;
+            let email = document.myform.email.value;
+            let phone  = document.myform.number.value;
+            let address = document.myform.address.value;
+            // return false; // Submit hobe na
+            // return true; // Submit hobe
+            // return statement stops the execution of a function and returns a value.
+
+            if(name == ""){
+                alert("Name can't be blank");
+                return false;
+            }
+            else if(email == ""){
+                alert("Email can't be blank");
+                return false;
+            }
+            else if(phone == ""){
+                alert("Phone number can't be blank");
+                return false;
+            }
+            else if(address == ""){
+                alert("Address can't be blank");
+                return false;
+            }
+            else{
+                alert("Congratulation!!!!!!! your data is approved😍");
+                return true;
+            }
+
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>
