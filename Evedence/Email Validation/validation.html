@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <form action="">
+        Email:
+        <input type="text" name="email" placeholder="Enter Your email"><br>
+        Confirm Email Id:
+        <input type="text" name="confirmEmail" placeholder="Confirm Email"><br>
+        <input type="submit" value="Submit" onclick="EmailValidation()">
+    </form>
+
+
+    <script>
+        function EmailValidation(){
+            let pattern = /[a-z0-9]+@[a-z0-9]+\.[a-z]{2,4}$/;
+            if(document.myForm,email.value.search(pattern)==-1){
+                alert("InValid E-mail");
+            }
+            else if(document.myForm.email.value != document.myForm.confirmEmail.value){
+                alert("E-mail does Not Matching");
+            }
+            else{
+                alert("Your E-mail Address is Fully valid");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Find the prime number</h3>
+
+    <script>
+
+        function CheckPrime(n){
+            if(n==1){
+                return n + " is not a prime number";
+            }
+            else if(n==2){
+                return n + " is a prime number";
+            }
+            else{
+                
+                for(var i = 2; n>i; i++){
+                    if(n%i==0){
+
+                        return n + " is not a prime number";
+                        
+                        // return hoye gele r next golo execute hobe na akebare function theke ber hoye jabe
+                        // console.log("yo");
+                    }
+                }
+            }
+            return n + " is a prime number";
+        }
+    
+
+        // Call Function
+        var result = CheckPrime(10);
+        document.write(result);
+
+
+    </script>
+</body>
+</html>
