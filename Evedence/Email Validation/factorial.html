@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>Check the console</h1> -->
+    <script>
+        function fectorial(n){
+            let result = 1;
+
+            for(i=1; i<=n; i++){
+                result *= i;
+            }
+            // return result;
+            return n + "! Fectorial is = " + result;
+        }
+        // console.log(fectorial(5));
+        document.write(fectorial(prompt("Enter a number")));
+    </script>
+</body>
+</html>

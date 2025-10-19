@@ -8,7 +8,7 @@
 <body>
     
 
-    <form action="">
+    <form action="" name="myForm">
         Email:
         <input type="text" name="email" placeholder="Enter Your email"><br>
         Confirm Email Id:
@@ -20,7 +20,7 @@
     <script>
         function EmailValidation(){
             let pattern = /[a-z0-9]+@[a-z0-9]+\.[a-z]{2,4}$/;
-            if(document.myForm,email.value.search(pattern)==-1){
+            if(document.myForm.email.value.search(pattern)==-1){
                 alert("InValid E-mail");
             }
             else if(document.myForm.email.value != document.myForm.confirmEmail.value){
