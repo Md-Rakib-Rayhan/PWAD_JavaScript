@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="myWindow()" >Click Here</button>
+    <button onclick="myWindow2()" >Click Here</button>
+    
+    <script>
+
+        function myWindow(){
+            // window.open(URL, windowName, windowFeatures);
+            // window.open("", "name", "width=400, height=300"); // new ekta window open hobe
+
+            let x = window.open("", "rayhan", "width=400, height=300");
+            x.document.write("Hello World") //window.document.write(); the actual syntax
+
+        }
+        function myWindow2(){
+    
+            let x = window.open("form.html", "rayhan", "width=400, height=300");
+
+    
+
+        }
+
+
+
+
+    </script>
+</body>
+</html>

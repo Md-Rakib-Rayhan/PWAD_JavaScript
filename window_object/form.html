@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>Basic Form</h3>
+    <form action="" name="myform"> <!-- Return na likhle function er return kaj korbe na -->
+        Name: <br>
+        <input type="text" name="name" placeholder="Enter Your Name"> <br>
+        Email: <br>
+        <input type="email" name="email" placeholder="Enter Your Email"> <br>
+        Phone Number: <br>
+        <input type="number" name="number" placeholder="Enter Your Phone Number"> <br>
+        Address: <br>
+        <textarea name="address" id=""></textarea> <br>
+        Subject: <br>
+        <input type="checkbox" name="subject" value="math">Math
+        <input type="checkbox" name="subject" value="english">English
+        <input type="checkbox" name="subject" value="science">Science
+        <br>
+
+        <input type="submit" name="submit" onclick="myWindow()" value="submit">
+    </form>
+
+ 
+
+    
+    <script>
+
+        function myWindow(){
+    
+
+            let name = document.myform.name.value;
+            let email = document.myform.email.value;
+            let number = document.myform.number.value;
+            let address = document.myform.address.value;
+            let subject = document.myform.subject;
+            
+            let a = [];
+            for(i=0; length(subject.checked)>i; i++){
+                a = push(subject.value[i]);
+            }
+            console.log(a);
+            
+
+            let x = window.open("", "rayhan", "width=400, height=300");
+
+            x.document.write("Name: ", name, "<br>Email: ", email, "<br>Number: ", number, "<br>Address: ", address, "<br>Subject: ", subject);
+            
+
+
+        }
+
+
+    </script>
+    
+   
+</body>
+</html>
