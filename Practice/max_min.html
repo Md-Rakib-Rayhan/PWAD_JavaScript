@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>check the console</h3>
+    <script>
+
+        let _1 = parseInt(prompt("Enter Your 1st Number"));
+        let _2 = parseInt(prompt("Enter Your 2nd Number"));
+        let _3 = parseInt(prompt("Enter Your 3rd Number"));
+
+        
+
+        let mydata = new Array();
+        mydata.push(_1, _2, _3);
+        // console.log(mydata);
+
+        let min = mydata[0];
+        let max = mydata[0];
+        
+        for(let i = 0; i<mydata.length; i++){
+            if(min>mydata[i]){
+                min = mydata[i];
+            }
+            if(max<mydata[i]){
+                max = mydata[i];
+            }
+        }
+
+        console.log("max: ", max);
+        console.log("min: ", min);
+
+
+    </script>
+</body>
+</html>

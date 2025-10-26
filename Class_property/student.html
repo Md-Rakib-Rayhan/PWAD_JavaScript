@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script src="student.js"></script>
+    <script>
+        const student1 = new StudentClass("Rakib", 120322019, "Dhaka");
+
+        console.log(student1);
+        document.write("Name: ", student1.name, "<br>Roll: ", student1.roll, "<br>");
+
+        let info = student1.StudentInfo();
+        document.write(info);
+    </script>
+    
+</body>
+</html>

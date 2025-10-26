@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with js Class</title>
+</head>
+<body>
+
+    <div class="container">
+        <form action="" name="myform">
+            Name: <br>
+            <input type="text" name="name" placeholder="Enter Your Name"> <br>
+            Address: <br>
+            <textarea name="address" placeholder="Enter Your Address"></textarea><br>
+            Phone: <br>
+            <input type="number" name="phone" placeholder="Enter Your Name"> <br> <br>
+            <!-- <input type="submit" name="submit" value="Submit"> -->
+             <button onclick="mydata()" type="button">Your Data on new window</button>
+        </form>
+    </div>
+
+    <script src="formdata.js"></script>
+    <script>
+        
+
+        function mydata(){
+            let name = document.myform.name.value;
+            let address = document.myform.address.value;
+            let phone = document.myform.phone.value;
+
+
+            const myobj = new FormData(name, address, phone);
+            let output = myobj.formInfo();
+
+            let mywindow = window.open("", "", "width = 500, height = 250");
+            mywindow.document.write(output);
+
+            // document.write(output);
+            // console.log(output);
+        }
+
+    </script>
+    
+</body>
+</html>

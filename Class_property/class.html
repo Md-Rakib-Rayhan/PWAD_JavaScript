@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Class Template</h3>
+
+
+    <!-- The constructor method is a special method:
+
+    It has to have the exact name "constructor"
+    It is executed automatically when a new object is created
+    It is used to initialize object properties -->
+
+    <script>
+        class CarClass{
+            constructor(name, year){ //method
+                this.name = name;
+                this.year = year;
+            }
+        }
+        console.log(CarClass);
+        
+        const car1 = new CarClass("Porota", 1990); // new data
+        console.log(car1);
+        const car2 = new CarClass("Cyber Truck", 2015);
+        console.log(car2);
+
+        document.write(car2.name);
+        console.log(car2.name);
+    </script>
+    
+</body>
+</html>
