@@ -11,3 +11,11 @@ Primitive and Compound___________________________________________________
 All data type divided into this two category:----
 Primative -> int, boolean, string, null, undifine
 Compound -> array, object
+
+Compound operator -> +=, *= , etc.....
+
+
+Compound Vs Non-Primitive_______________________________________________
+
+Compound -> A type that combines multiple values into one structure (like objects, arrays)
+Non-Primitive -> Any type that stores references (like objects, arrays, functions)
