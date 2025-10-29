@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let data = 5;
+        //let datas = [];
+
+        let fac = 1;
+
+        data = parseInt(prompt("Enter your data for \nget factorial value and check is prime or not: "));
+        let total = parseInt(prompt("Enter how many data \nyou want to enter to find min max value"));
+        let datas = [total];
+
+
+        for(let i=0; i<total; i++){
+            datas[i] = parseInt(prompt("Enter data number " + i));
+        }
+        let min = datas[0];
+        let max = datas[0];
+
+
+        function min_max() {
+
+            for(let i=0; i<datas.length; i++){
+
+                if (max<datas[i]){
+                    max = datas[i];
+                }
+                if (min>datas[i]){
+                    min = datas[i];
+                }
+            }
+
+            document.writeln("The maximum value is: " + max + "<br>The minimum value is: " + min + "<br>");
+        }
+        min_max();
+
+
+        
+        // _______________________________________________________________________________________
+
+
+
+        function prime_number(){
+
+            if(data==1 || data==0){
+                document.writeln("This is not a prime Number: " + data + "<br>");
+            }
+            else if(data==2){
+                document.writeln("This is a prime Number: " + data + "<br>");
+            }
+            else{
+
+                for(i=2; i<data; i++){
+                    if(data % i == 0){
+                        document.writeln("This is not a prime Number: " + data + "<br>"); 
+                        break;    
+                    }
+                    document.writeln("This is a prime Number: " + data + "<br>");
+
+                }
+            }
+
+
+
+
+            
+
+        }
+        prime_number();
+
+
+
+        // _______________________________________________________________________________________
+
+        function factorial_value(){
+
+            if(data>0){
+                for(i=1; i<=data; i++){
+                fac *= i;
+                }
+                document.writeln("The factorial number for " + data + " is = " + fac);
+            }
+        }
+        factorial_value();
+
+
+
+
+
+    </script>
+</body>
+</html>

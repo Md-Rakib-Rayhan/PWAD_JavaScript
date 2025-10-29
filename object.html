@@ -23,7 +23,39 @@
         car = {name:"Ulala", model:"ula25", price:102020.1}
         console.log(car);
 
+    </script>
+
+
+    <script>
+        // another way
+        const person = new Object({
+            firstName: "John",
+            lastName: "Doe",
+            age: 50
+        });
+
+        document.writeln(person.firstName + "<br>");
+        document.writeln(person["lastName"] + "<br><br>"); // avabe likhle key er age quatetion dite hobe
+
+
+        let value = "";
+        let keys = "";
+
+        for (let a in person) {
+        keys += a + " ";
+
+        value += person[a] + " "; //  a te key/data golo string akarei ase
+        
+        }
+
+        document.writeln(value + "<br>");
+        document.writeln(keys + "<br>");
+
+
+
 
     </script>
+
+
 </body>
 </html>
